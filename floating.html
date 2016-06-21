@@ -19,28 +19,41 @@
     .bold{
         font-weight:bold;
     }
-    .bluebox{ 
-        background-color: blue;
+    .purplebox { 
+        background-color: #620AC7;
         width: 200px;
         height:200px;
+        float:left;
     }
-    .redbox{    
-        background-color:red;
-        width: 200px;
-        height:200px;  
+    .greenbox {    
+        background-color:#0BCB45;
+        width: 300px;
+        height:100px;
+        float:right;  
     }    
+    .floatleft {
+        float:left;
+    }
+    
+    .clear { 
+        clear:both;
+    }
     </style>    
 </head>
 <body>
- <div class="bluebox">
-  <p class="large"> This is some text . </p>
-  <div class="redbox">
-  <p id="singleElement">This is more text in green</p>
-  </div>
-  
-  <p>The third <span class="underline">word</span> in this paragraph is underlined.</p>
-  <p>The fourth <span class="bold"> word</span> in this paragraph is bold</p>
-  
+    
+    
+ <div class="purplebox">
+    <p class="large"> This is some text . </p>
  </div>
+ 
+ 
+  <div class="greenbox">
+           <p id="singleElement">This is more text in green</p>
+  </div>
+   
+  <div class="clear"></div>
+  <p class="floatleft"> The third word</p>
+
 </body>
 </html>
